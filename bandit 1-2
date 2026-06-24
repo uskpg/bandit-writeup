@@ -1,0 +1,160 @@
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+pw: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+
+Welcome to OverTheWire!
+
+If you find any problems, please report them to the #wargames channel on
+discord or IRC.
+
+- -[ Playing the games ]--
+
+This machine might hold several wargames.
+If you are playing "somegame", then:
+
+```
+* USERNAMES are somegame0, somegame1, ...
+* Most LEVELS are stored in /somegame/.
+* PASSWORDS for each level are stored in /etc/somegame_pass/.
+```
+
+Write-access to homedirectories is disabled. It is advised to create a
+working directory with a hard-to-guess name in /tmp/.  You can use the
+command "mktemp -d" in order to generate a random and hard to guess
+directory in /tmp/.  Read-access to both /tmp/ is disabled and to /proc
+restricted so that users cannot snoop on eachother. Files and directories
+with easily guessable or short names will be periodically deleted! The /tmp
+directory is regularly wiped.
+Please play nice:
+
+```
+* don't leave orphan processes running
+* don't leave exploit-files laying around
+* don't annoy other players
+* don't post passwords or spoilers
+* again, DONT POST SPOILERS!
+  This includes writeups of your solution on your blog or website!
+```
+
+- -[ Tips ]--
+
+This machine has a 64bit processor and many security-features enabled
+by default, although ASLR has been switched off.  The following
+compiler flags might be interesting:
+
+```
+-m32                    compile for 32bit
+-fno-stack-protector    disable ProPolice
+-Wl,-z,norelro          disable relro
+```
+
+In addition, the execstack tool can be used to flag the stack as
+executable on ELF binaries.
+
+Finally, network-access is limited for most levels by a local
+firewall.
+
+- -[ Tools ]--
+
+For your convenience we have installed a few useful tools which you can find
+in the following locations:
+
+```
+* gef (<https://github.com/hugsy/gef>) in /opt/gef/
+* pwndbg (<https://github.com/pwndbg/pwndbg>) in /opt/pwndbg/
+* gdbinit (<https://github.com/gdbinit/Gdbinit>) in /opt/gdbinit/
+* pwntools (<https://github.com/Gallopsled/pwntools>)
+* radare2 (<http://www.radare.org/>)
+```
+
+- -[ More information ]--
+
+For more information regarding individual wargames, visit
+http://www.overthewire.org/wargames/
+
+For support, questions or comments, contact us on discord or IRC.
+
+Enjoy your stay!
+
+(번역 결과)
+
+오버더와이어에 오신 것을 환영합니다!
+
+문제가 발견되면 #wargames 채널에 신고해 주세요
+디스코드 또는 IRC.
+
+- -[게임하기 ]--
+
+이 기계는 여러 개의 전쟁 게임을 담을 수 있습니다.
+"어떤 게임"을 하고 있다면:
+
+```
+* USERNAMES는 어떤 게임0, 어떤 게임1, ...
+* 대부분의 레벨은 /somegame/에 저장됩니다.
+* 각 레벨의 비밀번호는 /etc/somegame_pass/에 저장됩니다.
+```
+
+홈디렉토리에 대한 쓰기 액세스가 비활성화되었습니다
+/tmp/에서 추측하기 어려운 이름을 가진 작업 디렉토리
+"mktemp -d" 명령을 사용하여 무작위로 추측하기 어려운 값을 생성합니다
+/tmp/ 디렉토리입니다. /tmp/에 대한 읽기 액세스와 /proc에 대한 액세스가 모두 비활성화되었습니다
+사용자가 서로를 스누핑할 수 없도록 제한되었습니다. 파일 및 디렉토리
+쉽게 추측할 수 있거나 짧은 이름은 주기적으로 삭제됩니다! /tmp
+디렉토리가 정기적으로 삭제됩니다.
+멋지게 놀아주세요:
+
+```
+* 고아 프로세스를 실행 상태로 두지 않기
+* 익스플로잇 파일을 그대로 두지 마세요
+* 다른 플레이어를 짜증나게 하지 마세요
+* 비밀번호나 스포일러를 게시하지 마세요
+* 다시 말하지만, 스포일러는 올리지 마세요!
+  여기에는 블로그나 웹사이트에 대한 솔루션 작성이 포함됩니다!
+```
+
+- -[팁 ]--
+
+이 기계에는 64비트 프로세서가 탑재되어 있으며 다양한 보안 기능이 활성화되어 있습니다
+기본적으로 ASLR이 꺼져 있지만 다음과 같습니다
+컴파일러 플래그는 흥미로울 수 있습니다:
+
+```
+-32비트를 위한 m32 컴파일
+-스택 보호 기능 비활성화 ProPolice
+-Wl,-z, 노렐로 비활성화 relro
+```
+
+또한 execstack 도구를 사용하여 스택을 다음과 같이 플래그 지정할 수 있습니다
+ELF 바이너리에서 실행 가능.
+
+마지막으로, 네트워크 접근은 로컬에 의해 대부분의 레벨에서 제한됩니다
+방화벽.
+
+- -[도구 ]--
+
+귀하의 편의를 위해 몇 가지 유용한 도구를 설치했습니다
+다음 위치에서:
+
+```
+* gef (<https://github.com/hugsy/gef>) in /opt/gef/
+* pwndbg (<https://github.com/pwndbg/pwndbg>) in /opt/pwndbg/
+* gdbinit (<https://github.com/gdbinit/Gdbinit>) in /opt/gdbinit/
+* pwntools (<https://github.com/Gallopsled/pwntools>)
+* radare2 (<http://www.radare.org/>)
+```
+
+- -[더 많은 정보 ]--
+
+개별 전쟁 게임에 대한 자세한 내용은 다음을 참조하십시오
+http://www.overthewire.org/wargames/
+
+지원, 질문 또는 의견이 있으시면 디스코드 또는 IRC로 문의해 주세요.
+
+즐거운 시간 보내세요!
+
+`ls`로 확인해보니 파일 목록에 -로 되어 있는 파일이 존재
+
+`cat -`로 하면 실행이 되지 않음
+
+dash(-) 명령어는 생성, 복사, 읽기 등 여러 과정이 다름
+
+`cat < -` 명령어로 읽기 성공
