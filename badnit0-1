@@ -1,0 +1,18 @@
+ssh bandit@bandit.labs.overthewire.org -p 2220
+
+ls 명령어로 디렉토리 확인 → `cat readme` 명령어로 readme 파일 내용 확인
+
+Congratulations on your first steps into the bandit game!!
+Please make sure you have read the rules at https://overthewire.org/rules/
+If you are following a course, workshop, walkthrough or other educational activity,
+please inform the instructor about the rules as well and encourage them to
+contribute to the OverTheWire community so we can keep these games free!
+
+(번역 결과)
+
+적 게임의 첫 걸음을 축하드립니다!!
+https://overthewire.org/rules/에서 규칙을 읽었는지 확인하세요.
+강좌, 워크숍, 연습 또는 기타 교육 활동을 따르는 경우, 강사에게도 규칙을 알리고 다음과 같이 격려해 주시기 바랍니다.
+OverTheWire 커뮤니티에 기여하여 이러한 게임을 무료로 유지할 수 있습니다!
+찾고 있는 비밀번호는 다음과 같습니다:
+ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
